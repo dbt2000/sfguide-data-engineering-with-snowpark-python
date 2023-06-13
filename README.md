@@ -169,7 +169,6 @@ snow procedure create
 In order to run the sproc in Snowflake you have a few options. Any sproc in Snowflake can be invoked through SQL as follows:
 
 ```
-CALL DAILY_CITY_METRICS_UPDATE_SP();
 ```
 
 
@@ -206,6 +205,7 @@ FROM TABLE(INFORMATION_SCHEMA.TASK_HISTORY(
     RESULT_LIMIT => 100))
 ORDER BY SCHEDULED_TIME DESC
 ;
+
 ```
 
 ## Step 9 - Process Incrementally
